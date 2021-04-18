@@ -173,11 +173,11 @@ def remove_terminals(rules):
                     if letter not in rules.keys():
                         existing = find_key_by_value(new_rules, letter)
                         if existing:
-                            rules[key][i] = v.replace(letter, existing)
+                            rules[key][i] = rules[key][i].replace(letter, existing)
                         else:
                             new_X = X + str(len(new_rules)+1)
                             new_rules[new_X] = letter
-                            rules[key][i] = v.replace(letter, new_X)
+                            rules[key][i] = rules[key][i].replace(letter, new_X)
     for key, value in new_rules.items():
         rules[key] = [value]
     return rules

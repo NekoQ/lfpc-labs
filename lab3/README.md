@@ -53,8 +53,8 @@ A -> bS | Ab | ba | a | bY1
 Y1 -> Sa 
 
 Chomsky Normal Form:
-S -> X1A | X1S | AX1 | bX2 | a | X1Y1 
-A -> X1S | AX1 | bX2 | a | X1Y1 
+S -> X1A | X1S | AX1 | X1X2 | a | X1Y1 
+A -> X1S | AX1 | X1X2 | a | X1Y1 
 Y1 -> SX2 
 X1 -> b 
 X2 -> a
